@@ -42,3 +42,9 @@ if ! fc-list | grep -q 'Symbols Nerd Font Mono'; then
         | tar -xJ -C "$dir"
     fc-cache -f "$dir"
 fi
+
+# zsh reads its config from ~/.config/zsh (ZDOTDIR), set in ~/.zshenv
+if [[ ! -f ~/.zshenv ]]; then
+    echo "==> Creating ~/.zshenv"
+    echo 'export ZDOTDIR="$HOME/.config/zsh"' > ~/.zshenv
+fi
