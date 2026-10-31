@@ -2,6 +2,7 @@
 
 !.gitignore
 !deps.sh
+!i3
 !i3/**
 i3/*.bak*
 i3/.*.swp
