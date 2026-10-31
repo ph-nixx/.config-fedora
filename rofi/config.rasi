@@ -1,0 +1,13 @@
+configuration {
+    modes: "combi,drun,run,power:/home/ink/.config/rofi/power.sh";
+    combi-modes: "power,drun";
+    combi-display-format: "{text}";
+    show-icons: true;
+    drun-display-format: "{name}";
+    display-drun: "";
+    display-combi: "";
+    display-run: "";
+    font: "JetBrains Mono 12";
+}
+
+@theme "~/.config/rofi/statusbar.rasi"

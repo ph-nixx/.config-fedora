@@ -1,0 +1,119 @@
+/* GTK Adwaita (light), matching the LightDM login box */
+* {
+    bg:        #f6f5f4;
+    base:      #ffffff;
+    fg:        #2e3436;
+    dim:       #929595;
+    accent:    #3584e4;
+    accent-fg: #ffffff;
+    urgent:    #e01b24;
+    border-c:  #cdc7c2;
+
+    background-color: transparent;
+    text-color:       @fg;
+    margin:  0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width:            600px;
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-c;
+    border-radius:    0;
+}
+
+mainbox {
+    padding:  12px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding:          8px 10px;
+    spacing:          10px;
+    background-color: @base;
+    border:           1px;
+    border-color:     @accent;
+    border-radius:    5px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @dim;
+}
+
+entry {
+    placeholder:       "Search";
+    placeholder-color: @dim;
+    cursor:            text;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: true;
+    scrollbar:    false;
+    margin:       10px 0 0 0;
+    padding:      4px 0;
+    spacing:      0;
+    background-color: @base;
+    border:           1px;
+    border-color:     @border-c;
+}
+
+element {
+    padding:  6px 12px;
+    spacing:  10px;
+    cursor:   pointer;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: @base;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       @accent-fg;
+}
+
+element normal.urgent, element alternate.urgent, element selected.urgent {
+    text-color: @urgent;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+    text-color:       @accent-fg;
+}
+
+element normal.active, element alternate.active {
+    text-color: @accent;
+}
+
+element selected.active {
+    background-color: @accent;
+    text-color:       @accent-fg;
+}
+
+element-icon {
+    size:           20px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color:     inherit;
+    vertical-align: 0.5;
+}
+
+message {
+    margin:           10px 0 0 0;
+    padding:          8px 10px;
+    background-color: @base;
+    border:           1px;
+    border-color:     @border-c;
+}
+
+textbox {
+    text-color: @fg;
+}

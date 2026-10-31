@@ -1,0 +1,12 @@
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[user]
+	name = ph-nixx
+	email = pmiller0706@gmail.com
