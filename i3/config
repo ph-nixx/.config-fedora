@@ -207,3 +207,6 @@ bindsym $mod+Return exec --no-startup-id ~/.config/i3/term.sh
 
 # open a browser
 bindsym $mod+b exec --no-startup-id firefox
+
+# obsidian workspace
+bindsym $mod+n exec --no-startup-id ~/.config/i3/note.sh
