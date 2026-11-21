@@ -35,8 +35,8 @@ command -v opam &>/dev/null && [[ -d "$HOME/.opam" ]] && eval $(opam env)
 # [[ ! -r '/Users/ink/.opam/opam-init/init.zsh' ]] || source '/Users/ink/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 
 # path
-export GOPATH=$HOME/code/go
-export PATH="$GOPATH/bin:$PATH"
+# export GOPATH=$HOME/code/go
+# export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.elan/env:$PATH"
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
