@@ -34,6 +34,9 @@ command -v opam &>/dev/null && [[ -d "$HOME/.opam" ]] && eval $(opam env)
 # compdef _kubebuilder kubebuilder
 # [[ ! -r '/Users/ink/.opam/opam-init/init.zsh' ]] || source '/Users/ink/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 
+# vars
+EDITOR=nvim
+
 # path
 # export GOPATH=$HOME/code/go
 # export PATH="$GOPATH/bin:$PATH"
